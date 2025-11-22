@@ -53,6 +53,9 @@ CREATE TABLE t_factura(
     CONSTRAINT      fk_producto    FOREIGN KEY(id_producto) REFERENCES t_producto(id_producto)
 )ENGINE=InnoDb;      
 
+CREATE TABLE t_usuario(
+    
+)
 
 SELECT pro.id_producto,
 		pro.producto,
@@ -61,3 +64,4 @@ SELECT pro.id_producto,
         uni.unidad
 FROM t_producto pro
 INNER JOIN t_unidad uni ON pro.id_unidad = uni.id_unidad
+
